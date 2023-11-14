@@ -9,7 +9,7 @@ const nextConfig = {
       new NextFederationPlugin({
         name: 'main',
         remotes: {
-          shop: `shop@${proccess.env.NEXT_PUBLIC_SHOP_APP_URL}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
+          shop: `shop@${process.env.NEXT_PUBLIC_SHOP_APP_URL}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
         },
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
@@ -22,11 +22,4 @@ const nextConfig = {
   }
 }
 
-module.exports = {
-  experiments: {
-    layers: true,
-  },
-  // outras configurações...
-};
-
-// module.exports = nextConfig
+module.exports = nextConfig
