@@ -27,11 +27,11 @@ const nextConfig = {
   }
 }
 
-// module.exports = {
-//   experiments: {
-//     layers: true,
-//   },
-//   // outras configurações...
-// };
+module.exports = {
+  experiments: {
+    layers: true,
+  },
+  // outras configurações...
+};
 
-module.exports = nextConfig
+// module.exports = nextConfig
