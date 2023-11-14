@@ -20,18 +20,18 @@ const nextConfig = {
         },
         extraOptions: {
           exposePages: true
-        }
+        },
       })
     );
     return config;
   }
 }
 
-module.exports = {
-  experiments: {
-    layers: true,
-  },
-  // outras configurações...
-};
+// module.exports = {
+//   experiments: {
+//     layers: true,
+//   },
+//   // outras configurações...
+// };
 
-// module.exports = nextConfig
+module.exports = nextConfig

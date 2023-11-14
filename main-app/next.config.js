@@ -15,17 +15,17 @@ const nextConfig = {
         exposes: {
           './footer': './components/Footer.js',
           './nav': './components/Nav.js'
-        }
+        },
       })
     );
     return config;
   }
 }
 
-// module.exports = nextConfig
-module.exports = {
-  experiments: {
-    layers: true,
-  },
-  // outras configurações...
-};
+module.exports = nextConfig
+// module.exports = {
+//   experiments: {
+//     layers: true,
+//   },
+//   // outras configurações...
+// };
