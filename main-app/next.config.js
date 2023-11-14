@@ -9,7 +9,7 @@ const nextConfig = {
       new NextFederationPlugin({
         name: 'main',
         remotes: {
-          shop: `shop@http://localhost:3001/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
+          shop: `shop@${proccess.env.NEXT_PUBLIC_SHOP_APP_URL}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
         },
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
